@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'serif':['Palatino'],
+        'sans': ['Helvetica']
+      },
+      borderRadius: {
+        'large': '0.7rem'
+      }
+    },
   },
   plugins: [],
 }
