@@ -25,24 +25,31 @@
 				</li>
 			</ul>
 		</div>
-		<div class="fixed md:hidden bg-red-100 w-full font-serif">
-			<div id="navUl" class="overflow-hidden h-0">
-				<ul class="flex flex-col justify-center items-center md:block">
-					<li class="h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
-						<a href="">About Me</a>
-					</li>
-					<li class="h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
-						<a href="">Projects</a>
-					</li>
-					<li class="h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
-						<a href="">Services</a>
-					</li>
-					<li class="h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
-						<a href="">Contact</a>
-					</li>
-				</ul>
+		<div id="navUl" class="fixed z-40 md:hidden w-1/2 h-full fixed dropdown cursor-pointer overflow-hidden bg-yellow-100">
+			<ul class="flex flex-col justify-center items-center md:block">
+				<li class="m-2 h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
+					<a class="whitespace-nowrap" href="">About Me</a>
+				</li>
+				<li class="m-2 h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
+					<a class="whitespace-nowrap" href="">Projects</a>
+				</li>
+				<li class="m-2 h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
+					<a class="whitespace-nowrap" href="">Services</a>
+				</li>
+				<li class="m-2 h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
+					<a class="whitespace-nowrap" href="">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bg-yellow-90 p-2 w-full z-30 md:hidden">
+			<div id="dropDownButton" class="flex flex-col justify-between cursor-pointer w-10 h-10">
+				<div class="bg-slate-900 w-full h-2"></div>		
+				<div class="bg-slate-900 w-full h-2"></div>		
+				<div class="bg-slate-900 w-full h-2"></div>		
 			</div>
-			<div id="dropDownButton" class="bg-blue-500">press down</div>
+		</div>
+		<div class="fixed rounded-full p-5 bg-slate-500 bottom-5 right-5">
+			<div class="m-auto backToTopButton w-5 h-5" id="backToTopButton"></div>
 		</div>
 	</nav>
 	<section class="flex flex-row justify-center">
