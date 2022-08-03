@@ -25,7 +25,7 @@
 				</li>
 			</ul>
 		</div>
-		<div id="navUl" class="fixed z-40 md:hidden w-1/2 h-full fixed dropdown cursor-pointer overflow-hidden bg-yellow-100">
+		<div id="navUl" class="fixed z-40 drop-shadow-2xl md:hidden w-1/2 h-full fixed dropdown cursor-pointer overflow-hidden bg-orange-100">
 			<ul class="flex flex-col justify-center items-center md:block">
 				<li class="m-2 h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
 					<a class="whitespace-nowrap" href="">About Me</a>
@@ -43,13 +43,13 @@
 		</div>
 		<div class="bg-yellow-90 p-2 w-full z-30 md:hidden">
 			<div id="dropDownButton" class="flex flex-col justify-between cursor-pointer w-10 h-10">
-				<div class="bg-slate-900 w-full h-2"></div>		
-				<div class="bg-slate-900 w-full h-2"></div>		
-				<div class="bg-slate-900 w-full h-2"></div>		
+				<div class="bg-slate-900 rounded-full w-full h-2"></div>		
+				<div class="bg-slate-900 rounded-full w-full h-2"></div>		
+				<div class="bg-slate-900 rounded-full w-full h-2"></div>		
 			</div>
 		</div>
-		<div class="fixed rounded-full p-5 bg-slate-500 bottom-5 right-5">
-			<div class="m-auto backToTopButton w-5 h-5" id="backToTopButton"></div>
+		<div id="backToTopButton" class="flex drop-shadow-2xl justify-center items-center md:hidden fixed cursor-pointer rounded-full w-16 h-16 bg-orange-100 bottom-5 right-5">
+			<div class="arrowUp w-5 h-5"></div>
 		</div>
 	</nav>
 	<section class="flex flex-row justify-center">
@@ -60,10 +60,13 @@
 					<h1 class="font-serif text-md md:text-3xl ">Joseph Harold S. Timbang</h1>
 				</div>
 				<div class="p-5">
-					<h2 class="font-serif text-3xl md:text-7xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore culpa delectus eveniet?</h2>
+					<h2 class="font-serif text-3xl md:text-7xl">Hi! I'm an aspring front-end developer based in the Philippines.</h2>
 				</div>
 				<div class="p-5">
-					<h2 class="text-md md:text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis amet praesentium, temporibus sint corporis ab reiciendis maxime asperiores atque aliquam.</h2>
+					<p class="text-md md:text-2xl leading-10">Currently, I'm pursuing my Bachelor's degree in Information Technology in a University. While studying, I always try to make a few lines of code daily and learn something in front-end development.</p>
+				</div>
+				<div class="p-5">
+					<p class="text-md md:text-2xl leading-10">ReactJS, vanillaJS, and tailwindCSS are my go to frameworks for development.</p>
 				</div>
 			</div>
 			<hr class="divide-slate-900"/>
@@ -83,10 +86,14 @@
 					<h1 class="font-serif text-3xl underline">Service</h1>
 				</div>
 				<div class="p-5">
-					<h2 class="font-serif text-3xl md:text-7xl">Lorem ipsum dolor sit amet consectetur.</h2>
+					<h2 class="font-serif text-3xl md:text-7xl">If your website needs interactivity,<br/>I would be happy to assist you with that!</h2>
 				</div>
 				<div class="p-5">
-					<h2 class="text-md md:text-2xl">Lorem ipsum dolor sit amet. <a class="italic origin-center text-blue-900 duration-1000 hover:scale-75 hover:underline">download my cv here</a></h2>
+					<h2 class="text-md md:text-2xl">I'm open for projects for small businesses and individuals.</h2>
+					<h2 class="text-md md:text-2xl"></h2>
+				</div>
+				<div class="p-5">
+						<h2 class="text-md md:text-2xl">For more details you can <a class="italic origin-center text-blue-900 duration-1000 hover:scale-75 hover:underline">download my cv here</a>.</h2>
 				</div>
 			</div>
 			<hr>
@@ -95,10 +102,10 @@
 					<h1 class="font-serif text-3xl underline">Contacts</h1>
 				</div>
 				<div class="p-5">
-					<h2 class="font-serif text-3xl md:text-7xl">If you're interested, you can freely reach me out!</h2>
+					<h2 class="font-serif text-3xl md:text-7xl">If you have questions, you can freely reach me out.</h2>
 				</div>
 				<div class="p-5">
-					<h2 class="text-md md:text-2xl">It'll only take a couple of seconds</h2>
+					<h2 class="text-md md:text-2xl">It'll only take a couple of seconds!</h2>
 				</div>
 				<div class="w-full lg:w-3/4 self-center border border-slate-700 rounded-large my-12 py-5 px-2 lg:px-5 md:pt-12">
 					<form method="POST">
@@ -116,22 +123,22 @@
 						</div>
 					</form>
 				</div>
-				<div class="flex flex-col lg:flex-row justify-evenly items-center p-5 h-full w-full border border-slate-500 rounded-large lg:h-64">
+				<div class="flex flex-col divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-slate-600/10 lg:flex-row justify-evenly items-center p-5 h-full w-full border border-slate-500 rounded-large lg:h-64">
 					<!-- one contacts -->
-					<div class="flex flex-col items-center flex-1 justify-start">
-						<img src="/src/assets/githubLogo.png" alt="">
-						<h1 class="underline font-serif text-xl">Github</h1>
-						<p class="text-sm">/josephharold</p>
+					<div class="flex w-full flex-col items-center flex-1 justify-between">
+						<img class="w-24 m-5 md:h-24 md:max-w-none" src="/src/assets/githubLogo.png" alt="">
+						<h1 class="underline font-serif text-lg">Github</h1>
+						<a class="italic text-blue-900 hover:underline text-md" href="https://github.com/josephharold">/josephharold</a>
 					</div>
-					<div class="flex flex-col items-center flex-1 justify-start">
-						<img src="/src/assets/githubLogo.png" alt="">
-						<h1 class="underline font-serif text-xl">LinkedIn</h1>
-						<p class="text-sm">/josephharold</p>
+					<div class="flex w-full flex-col items-center flex-1 justify-between">
+						<img class="w-24 m-5 md:h-24 md:max-w-none" src="/src/assets/linkedInBugLogo.png" alt="">
+						<h1 class="underline font-serif text-lg">LinkedIn</h1>
+						<a class="italic text-blue-900 hover:underline text-md" href="https://linkedin.com/in/joseph-harold-timbang">/in/joseph-harold-timbang</a>
 					</div>
-					<div class="flex flex-col items-center flex-1 justify-start">
-						<img src="/src/assets/githubLogo.png" alt="">
-						<h1 class="underline font-serif text-xl">Gmail</h1>
-						<p class="text-sm">josephharold.timbang.dev@gmail.com</p>
+					<div class="flex w-full flex-col items-center flex-1 justify-between">
+						<img class="w-24 m-5 md:h-24 md:max-w-none" src="/src/assets/gmailLogo.png" alt="">
+						<h1 class="underline font-serif text-lg">Gmail</h1>
+						<a class="italic text-blue-900 hover:underline text-md" href="mailto:josephharold.timbang.dev@gmail.com">josephharold.timbang.dev@gmail.com</a>
 					</div>
 				</div>
 			</div>
