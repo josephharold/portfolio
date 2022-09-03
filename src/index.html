@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 	<link rel="stylesheet" href="/dist/output.css">
 	<title>Document</title>
 </head>
@@ -11,21 +12,21 @@
 	<nav>
 		<div class="hidden bg-yellow-100 w-full font-serif top-0 md:block md:bg-transparent md:w-1/4 md:text-xl fixed md:top-12 md:right-0 md:px-10">
 			<ul class="flex flex-row justify-around md:block">
-				<li class="aboutMeNav h-12 hover:text-lg duration-100 flex flex-row align-middle justify-end">
+				<li class="aboutMeNav cursor-pointer h-12 hover:text-lg duration-100 flex flex-row align-middle justify-end">
 					<a>About Me</a>
 				</li>
-				<li class="projectsNav h-12 hover:text-lg duration-100 flex flex-row align-middle justify-end">
+				<li class="projectsNav cursor-pointer h-12 hover:text-lg duration-100 flex flex-row align-middle justify-end">
 					<a>Projects</a>
 				</li>
-				<li class="servicesNav h-12 hover:text-lg duration-100 flex flex-row align-middle justify-end">
+				<li class="servicesNav cursor-pointer h-12 hover:text-lg duration-100 flex flex-row align-middle justify-end">
 					<a>Services</a>
 				</li>
-				<li class="contactsNav h-12 hover:text-lg duration-100 flex flex-row align-middle justify-end">
+				<li class="contactsNav cursor-pointer h-12 hover:text-lg duration-100 flex flex-row align-middle justify-end">
 					<a>Contacts</a>
 				</li>
 			</ul>
 		</div>
-		<div id="navUl" class="fixed z-40 drop-shadow-2xl md:hidden w-1/2 h-full fixed dropdown cursor-pointer overflow-hidden bg-orange-100">
+		<div id="navUl" class="fixed z-40 drop-shadow-2xl md:hidden w-1/2 h-full fixed dropdown cursor-pointer overflow-hidden bg-slate-200">
 			<ul class="flex flex-col justify-center items-center md:block">
 				<li class="aboutMeNav m-2 h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
 					<a class="whitespace-nowrap">About Me</a>
@@ -41,6 +42,7 @@
 				</li>
 			</ul>
 		</div>
+		<!-- hamburger menu -->
 		<div class="bg-yellow-90 p-2 w-full z-30 md:hidden">
 			<div id="dropDownButton" class="flex flex-col justify-between cursor-pointer w-10 h-10">
 				<div class="bg-slate-900 rounded-full w-full h-2"></div>		
@@ -48,19 +50,20 @@
 				<div class="bg-slate-900 rounded-full w-full h-2"></div>		
 			</div>
 		</div>
-		<div id="backToTopButton" class="flex drop-shadow-2xl justify-center items-center md:hidden fixed cursor-pointer rounded-full w-16 h-16 bg-orange-100 bottom-5 right-5">
+		<!-- back to top button -->
+		<div id="backToTopButton" class="flex drop-shadow-2xl justify-center items-center md:hidden fixed cursor-pointer rounded-full w-16 h-16 bg-slate-200 bottom-5 right-5 z-30">
 			<div class="arrowUp w-5 h-5"></div>
 		</div>
 	</nav>
 	<section class="flex flex-row justify-center">
 		<div class="flex flex-col align-center w-full md:w-3/4 divide-slate-600">
 			<!-- about me -->
-			<div id="aboutMe" class="mb-32 p-5">
+			<div id="aboutMe" class="flex flex-col lg:gap-y-3 mb-32 p-5">
 				<div class="p-5">
 					<h1 class="font-serif text-md md:text-3xl ">Joseph Harold S. Timbang</h1>
 				</div>
 				<div class="p-5">
-					<h2 class="font-serif text-3xl md:text-7xl">Hi! I'm an aspring front-end developer based in the Philippines.</h2>
+					<h2 class="font-serif text-3xl md:text-7xl">Hi! I'm a front-end developer based in the Philippines.</h2>
 				</div>
 				<div class="p-5">
 					<p class="text-md md:text-2xl leading-10">Currently, I'm pursuing my Bachelor's degree in Information Technology in a University. While studying, I always try to make a few lines of code daily and learn something in front-end development.</p>
@@ -75,13 +78,44 @@
 				<div class="p-5">
 					<h2 id="projects" class="font-serif text-3xl underline">Projects</h2>
 				</div>
-				<div class="m-5 mb-24 flex flex-col lg:flex-row md:justify-between">
-					<img class="h-64"src="data:image/jpeg;base64,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" alt="">
-					<div class="m-5 md:basis-1/3"><strong class="">Lorem ipsum</strong> dolor sit amet consectetur, adipisicing elit. Debitis ad velit dolore, neque dolores illo earum vero veniam. Velit laborum vel eligendi ea excepturi blanditiis aut doloribus, id asperiores inventore, assumenda explicabo. Laudantium amet velit sapiente natus, placeat magni laborum.</div>	
+				<div class="m-5 mb-24 flex flex-col lg:flex-row md:justify-center">
+					<div id="typingGame" class="glide">
+						<div data-glide-el="track" class="glide__track">
+							<ul class="glide__slides">
+								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/typingGame.png" alt=""></li>
+								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/typingGame_light.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="m-5 mb-24 flex flex-col lg:flex-row md:justify-center">
+					<div id="todoList" class="glide">
+						<div data-glide-el="track" class="glide__track">
+							<ul class="glide__slides">
+								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/todoList.png" alt=""></li>
+								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/todoList(1).png" alt=""></li>
+								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/todoList(2).png" alt=""></li>
+								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/todoList(3).png" alt=""></li>
+								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/todoList(4).png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="m-5 mb-24 flex flex-col lg:flex-row md:justify-center">
+					<div id="weatherApp" class="glide">
+						<div data-glide-el="track" class="glide__track">
+							<ul class="glide__slides">
+								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/weatherApp.png" alt=""></li>
+								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/weatherApp(1).png" alt=""></li>
+								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/weatherApp(2).png" alt=""></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 			<hr/>
-			<div class="my-32 p-5">
+			<!-- services -->
+			<div class="flex flex-col lg:gap-y-3 my-32 p-5">
 				<div class="p-5">
 					<h1 id="services" class="font-serif text-3xl underline">Services</h1>
 				</div>
@@ -93,7 +127,7 @@
 					<h2 class="text-md md:text-2xl"></h2>
 				</div>
 				<div class="p-5">
-						<h2 class="text-md md:text-2xl">For more details you can <a class="italic origin-center text-blue-900 duration-1000 hover:scale-75 hover:underline">download my cv here</a>.</h2>
+						<h2 class="text-md md:text-2xl">For more details you can <a href="https://www.fiverr.com/joseph_harold" class="cursor-pointer italic text-blue-900 hover:underline">check my Fiverr profile here.</a></h2>
 				</div>
 			</div>
 			<hr>
@@ -107,43 +141,54 @@
 				<div class="p-5">
 					<h2 class="text-md md:text-2xl">It'll only take a couple of seconds!</h2>
 				</div>
-				<div class="w-full lg:w-3/4 self-center border border-slate-700 rounded-large my-12 py-5 px-2 lg:px-5 md:pt-12">
-					<form method="POST">
-						<div class="flex flex-row justify-center p-2 md:p-5">
-							<input placeholder="Name" name="name" id="name" class="w-full lg:w-3/4 bg-yellow-900/10 h-12 p-5"type="text">
-						</div>
-						<div class="flex flex-row justify-center p-2 md:p-5 w-full">
-							<input placeholder="Email" name="email" id="email" class="w-full lg:w-3/4 bg-yellow-900/10 h-12 p-5"type="text">
-						</div>
-						<div class="flex flex-row justify-center p-2 md:p-5">
-							<textarea placeholder="Message" class="w-full lg:w-3/4 bg-yellow-900/10 h-32 p-5"></textarea>
-						</div>
-						<div class="flex flex-row justify-center md:p-5">
-							<button class="border border-slate-500 px-2 md:px-5 py-2 w-1/3 rounded-md">Submit</button>
-						</div>
-					</form>
-				</div>
-				<div class="flex flex-col divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-slate-600/10 lg:flex-row justify-evenly items-center p-5 h-full w-full border border-slate-500 rounded-large lg:h-64">
+				<div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-y-7 sm:items-center p-5 h-full w-full border border-slate-500 rounded-large">
 					<!-- one contacts -->
-					<div class="flex w-full flex-col items-center flex-1 justify-between">
-						<img class="w-24 m-5 md:h-24 md:max-w-none" src="/src/assets/githubLogo.png" alt="">
+					<img class="justify-self-center w-10 lg:w-12 m-2 sm:m-5" src="/src/assets/githubLogo.png" alt="">
+					<div class="flex flex-col items-center md:items-start">
 						<h1 class="underline font-serif text-lg">Github</h1>
 						<a class="italic text-blue-900 hover:underline text-md" href="https://github.com/josephharold">/josephharold</a>
 					</div>
-					<div class="flex w-full flex-col items-center flex-1 justify-between">
-						<img class="w-24 m-5 md:h-24 md:max-w-none" src="/src/assets/linkedInBugLogo.png" alt="">
+					<hr class="border-slate-500 sm:hidden my-3">
+					<img class="justify-self-center w-10 lg:w-12 m-2 sm:m-5" src="/src/assets/linkedInBugLogo.png" alt="">
+					<div class="flex flex-col items-center md:items-start">
 						<h1 class="underline font-serif text-lg">LinkedIn</h1>
 						<a class="italic text-blue-900 hover:underline text-md" href="https://linkedin.com/in/joseph-harold-timbang">/in/joseph-harold-timbang</a>
 					</div>
-					<div class="flex w-full flex-col items-center flex-1 justify-between">
-						<img class="w-24 m-5 md:h-24 md:max-w-none" src="/src/assets/gmailLogo.png" alt="">
+					<hr class="border-slate-500 sm:hidden my-3">
+					<img class="justify-self-center w-10 lg:w-12 m-2 sm:m-5" src="/src/assets/gmailLogo.png" alt="">
+					<div class="flex flex-col items-center md:items-start">
 						<h1 class="underline font-serif text-lg">Gmail</h1>
-						<a class="italic text-blue-900 hover:underline text-md" href="mailto:josephharold.timbang.dev@gmail.com">josephharold.timbang.dev@gmail.com</a>
+						<a class="italic text-blue-900 hover:underline break-all text-md" href="mailto:josephharold.timbang.dev@gmail.com">josephharold.timbang.dev@gmail.com</a>
+					</div>
+					<hr class="border-slate-500 sm:hidden my-3">
+					<h1 class="font-serif text-3xl justify-self-center w-24 lg:w-12 m-2 sm:m-5">Fiverr</h1>
+					<div class="flex flex-col items-center md:items-start">
+						<a class="italic text-blue-900 hover:underline text-md" href="https://www.fiverr.com/joseph_harold">/joseph_harold</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<script src="scripts/script.js"></script>
+	<script src="scripts/script.js" type="module"></script>
+	<!-- TODO: change this into ES6 module -->
+	<!-- <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
+	<script>
+		new Glide('#typingGame',{
+			autoplay: 2300,
+			hoverpause: false
+		}).mount();
+		setTimeout(() => {
+			new Glide('#todoList',{
+				autoplay: 2300,
+				hoverpause: false
+			}).mount();
+		}, 1250);
+		setTimeout(() => {
+			new Glide('#weatherApp',{
+				autoplay: 2300,
+				hoverpause: false
+			}).mount();
+		}, 1550);
+	</script> -->
 </body>
 </html>

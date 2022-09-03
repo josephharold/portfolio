@@ -1,3 +1,22 @@
+import Glide from '../../node_modules/@glidejs/glide/dist/glide.min';
+
+new Glide('#typingGame',{
+	autoplay: 2300,
+	hoverpause: false
+}).mount();
+setTimeout(() => {
+	new Glide('#todoList',{
+		autoplay: 2300,
+		hoverpause: false
+	}).mount();
+}, 1250);
+setTimeout(() => {
+	new Glide('#weatherApp',{
+		autoplay: 2300,
+		hoverpause: false
+	}).mount();
+}, 1550);
+
 const navUl = document.getElementById('navUl');
 // navigation icons
 const dropDownButton = document.getElementById('dropDownButton');
@@ -14,7 +33,6 @@ const services = document.getElementById('services');
 const contacts = document.getElementById('contacts');
 const toggleNavUl = ()=>{
 	navUl.classList.toggle('dropdown-active');
-	console.log('asdfasd');
 }
 
 const closeNavUl = (e)=>{
