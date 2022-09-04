@@ -1,8 +1,7 @@
 // webpack.config.js
 module.exports = {
   entry: [
-    './src/scripts/script.js',
-    './dist/output.css'
+    './node_modules/@glidejs/glide/dist/glide.js',
   ],
   output: {
     path: __dirname,

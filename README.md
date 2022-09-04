@@ -13,7 +13,7 @@ The design of this page was inspired by :
 * Tailwindcss v3.1.6
 * HTML5
 * Vanilla Javascript
-
+* Glidejs
 ## How to use
 
 Download this project and run 'npm intall'
