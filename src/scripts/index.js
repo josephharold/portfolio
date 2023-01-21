@@ -1,3 +1,7 @@
+import '../styles/input.css';
+import '@glidejs/glide/src/assets/sass/glide.core.scss';
+// import '../styles/sass.scss';
+import * as slider from './slider.js';
 const navUl = document.getElementById('navUl');
 // navigation icons
 const dropDownButton = document.getElementById('dropDownButton');
@@ -29,7 +33,7 @@ const backToTop = ()=>{
 }
 
 const scrollToSection = (id)=>{
-	document.getElementById(id).scrollIntoView({behavior:"smooth", block:"start"});
+	document.getElementById(id).scrollIntoView({behavior:"smooth"});
 	toggleNavUl();
 }
 dropDownButton.addEventListener('click', ()=>toggleNavUl());
@@ -43,3 +47,7 @@ for(let i=0; i<2; i++){
 	contactsNav[i].addEventListener('click',()=>{scrollToSection('contacts')});
 	servicesNav[i].addEventListener('click',()=>{scrollToSection('services')});
 }
+
+slider.todoList.mount();
+slider.weatherApp.mount();
+slider.typingGame.mount();

@@ -1,40 +1,41 @@
-// webpack.config.js
+const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 module.exports = {
-  entry: [
-    './node_modules/@glidejs/glide/dist/glide.js',
-  ],
-  output: {
-    path: __dirname,
-    publicPath: '/',
-    filename: 'bundle.js'
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "script-loader"
-        }
-      },
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader",
-            options: {
-              modules: true,
-              importLoaders: 1,
-              localIdentName: "[name]_[local]_[hash:base64]",
-              sourceMap: true,
-              minimize: true
-            }
-          }
-        ]
-      }
-    ]
-  }
-};
+	watch: true, 
+	mode: 'development',
+	entry: {
+		bundle: path.join(__dirname, 'src/scripts/index.js')
+	},
+	output: {
+		path: path.resolve(__dirname, 'dist' ),
+		filename: 'bundle[contenthash].js',	
+		clean: true
+	},
+	module:{
+		rules: [
+			{
+				test: /\.css/i,
+				use: ['style-loader', 'css-loader', 'postcss-loader']
+			},
+			{
+				test: /\.scss$/,
+				use: [
+					'style-loader',
+					'css-loader',
+					'sass-loader'
+				]
+			},
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)/i,
+				type: 'asset/resource'
+			}
+		]
+	},
+  plugins: [
+		new HtmlWebPackPlugin({
+			title: 'helloworld',
+			filename: 'index.html',
+			template: 'src/index.html'
+		})
+	]
+}

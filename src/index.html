@@ -4,8 +4,6 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-	<link rel="stylesheet" href="/dist/output.css">
 	<title>Document</title>
 </head>
 <body class="bg-yellow-900/10 text-slate-900 px-2 pb-2 pt-0 md:p-10">
@@ -43,15 +41,15 @@
 			</ul>
 		</div>
 		<!-- hamburger menu -->
-		<div class="bg-yellow-90 p-2 w-full z-30 md:hidden">
-			<div id="dropDownButton" class="flex flex-col justify-between cursor-pointer w-10 h-10">
+		<div class="bg-yellow-90 py-6 px-10 w-max z-30 md:hidden">
+			<div id="dropDownButton" class="flex flex-col gap-2 justify-between cursor-pointer w-10 h-10">
 				<div class="bg-slate-900 rounded-full w-full h-2"></div>		
 				<div class="bg-slate-900 rounded-full w-full h-2"></div>		
 				<div class="bg-slate-900 rounded-full w-full h-2"></div>		
 			</div>
 		</div>
 		<!-- back to top button -->
-		<div id="backToTopButton" class="flex drop-shadow-2xl justify-center items-center md:hidden fixed cursor-pointer rounded-full w-16 h-16 bg-slate-200 bottom-5 right-5 z-30">
+		<div id="backToTopButton" class="border-2 border-slate-300 flex drop-shadow-2xl justify-center items-center md:hidden fixed cursor-pointer rounded-full w-16 h-16 bg-slate-200 bottom-5 right-5 z-30">
 			<div class="arrowUp w-5 h-5"></div>
 		</div>
 	</nav>
@@ -60,54 +58,54 @@
 			<!-- about me -->
 			<div id="aboutMe" class="flex flex-col lg:gap-y-3 mb-32 p-5">
 				<div class="p-5">
-					<h1 class="font-serif text-md md:text-3xl ">Joseph Harold S. Timbang</h1>
+					<h1 class="font-serif font-bold text-md md:text-3xl ">Joseph Harold S. Timbang</h1>
 				</div>
 				<div class="p-5">
-					<h2 class="font-serif text-3xl md:text-7xl">Hi! I'm a front-end developer based in the Philippines.</h2>
+					<h2 class="font-serif font-bold text-3xl md:text-7xl">Hi! I'm a front-end developer based in the Philippines.</h2>
 				</div>
 				<div class="p-5">
-					<p class="text-md md:text-2xl leading-10">Currently, I'm pursuing my Bachelor's degree in Information Technology in a University. While studying, I always try to make a few lines of code daily and learn something in front-end development.</p>
+					<p class="text-md text-justify md:text-2xl leading-10">Currently, I'm pursuing my Bachelor's degree in Information Technology in a University. While studying, I always try to make a few lines of code daily and learn something in front-end development.</p>
 				</div>
 				<div class="p-5">
-					<p class="text-md md:text-2xl leading-10">ReactJS, vanillaJS, and tailwindCSS are my go to frameworks for development.</p>
+					<p class="text-md text-justify md:text-2xl leading-10">ReactJS, vanillaJS, and tailwindCSS are my go to frameworks for development.</p>
 				</div>
 			</div>
 			<hr class="divide-slate-900"/>
 			<!-- Projects -->
 			<div class="my-32 p-5">
 				<div class="p-5">
-					<h2 id="projects" class="font-serif text-3xl underline">Projects</h2>
+					<h2 id="projects" class="font-serif font-bold text-3xl underline">Projects</h2>
 				</div>
-				<div class="m-5 mb-24 flex flex-col lg:flex-row md:justify-center">
+				<div class="cursor-grab m-5 mb-24 flex flex-col lg:flex-row md:justify-center">
 					<div id="typingGame" class="glide">
 						<div data-glide-el="track" class="glide__track">
 							<ul class="glide__slides">
-								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/typingGame.png" alt=""></li>
-								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/typingGame_light.png" alt=""></li>
+								<li class="glide__slide"><img id="typingGameImg"class="w-full sm:w-11/12 rounded-large"src="/src/assets/typingGame.png" alt=""></li>
+								<li class="glide__slide"><img id="typingGameImg1"class="w-full sm:w-11/12 rounded-large"src="/src/assets/typingGame_light.png" alt=""></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="m-5 mb-24 flex flex-col lg:flex-row md:justify-center">
+				<div class="cursor-grab m-5 mb-24 flex flex-col lg:flex-row md:justify-center">
 					<div id="todoList" class="glide">
 						<div data-glide-el="track" class="glide__track">
 							<ul class="glide__slides">
-								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/todoList.png" alt=""></li>
-								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/todoList(1).png" alt=""></li>
-								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/todoList(2).png" alt=""></li>
-								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/todoList(3).png" alt=""></li>
-								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/todoList(4).png" alt=""></li>
+								<li class="glide__slide"><img id="todoListImg"class="w-full sm:w-11/12 rounded-large"src="/src/assets/todoList.png" alt=""></li>
+								<li class="glide__slide"><img id="todoListImg1"class="w-full sm:w-11/12 rounded-large"src="/src/assets/todoList(1).png" alt=""></li>
+								<li class="glide__slide"><img id="todoListImg2"class="w-full sm:w-11/12 rounded-large"src="/src/assets/todoList(2).png" alt=""></li>
+								<li class="glide__slide"><img id="todoListImg3"class="w-full sm:w-11/12 rounded-large"src="/src/assets/todoList(3).png" alt=""></li>
+								<li class="glide__slide"><img id="todoListImg4"class="w-full sm:w-11/12 rounded-large"src="/src/assets/todoList(4).png" alt=""></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="m-5 mb-24 flex flex-col lg:flex-row md:justify-center">
+				<div class="cursor-grab m-5 mb-24 flex flex-col lg:flex-row md:justify-center">
 					<div id="weatherApp" class="glide">
 						<div data-glide-el="track" class="glide__track">
 							<ul class="glide__slides">
-								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/weatherApp.png" alt=""></li>
-								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/weatherApp(1).png" alt=""></li>
-								<li class="glide__slide"><img class="w-full sm:w-11/12 rounded-large"src="./assets/weatherApp(2).png" alt=""></li>
+								<li class="glide__slide"><img id="weatherAppImg" class="w-full sm:w-11/12 rounded-large"src="/src/assets/weatherApp.png" alt=""></li>
+								<li class="glide__slide"><img id="weatherAppImg1" class="w-full sm:w-11/12 rounded-large"src="/src/assets/weatherApp(1).png" alt=""></li>
+								<li class="glide__slide"><img id="weatherAppImg2" class="w-full sm:w-11/12 rounded-large"src="/src/assets/weatherApp(2).png" alt=""></li>
 							</ul>
 						</div>
 					</div>
@@ -117,10 +115,10 @@
 			<!-- services -->
 			<div class="flex flex-col lg:gap-y-3 my-32 p-5">
 				<div class="p-5">
-					<h1 id="services" class="font-serif text-3xl underline">Services</h1>
+					<h1 id="services" class="font-serif font-bold text-3xl underline">Services</h1>
 				</div>
 				<div class="p-5">
-					<h2 class="font-serif text-3xl md:text-7xl">If your website needs interactivity,<br/>I would be happy to assist you with that!</h2>
+					<h2 class="font-serif lg:font-bold text-3xl md:text-7xl">If your website needs interactivity,<br/>I would be happy to assist you with that!</h2>
 				</div>
 				<div class="p-5">
 					<h2 class="text-md md:text-2xl">I'm open for projects for small businesses and individuals.</h2>
@@ -136,7 +134,7 @@
 					<h1 id="contacts" class="font-serif text-3xl underline">Contacts</h1>
 				</div>
 				<div class="p-5">
-					<h2 class="font-serif text-3xl md:text-7xl">If you have questions, you can freely reach me out.</h2>
+					<h2 class="font-serif lg:font-bold text-3xl md:text-7xl">If you have questions, you can freely reach me out.</h2>
 				</div>
 				<div class="p-5">
 					<h2 class="text-md md:text-2xl">It'll only take a couple of seconds!</h2>
@@ -168,26 +166,27 @@
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<script src="scripts/script.js" type="module"></script>
-	<script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
+	<!-- <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
 	<script>
-		new Glide('#typingGame',{
-			autoplay: 2300,
-			hoverpause: false
-		}).mount();
-		setTimeout(() => {
-			new Glide('#todoList',{
-				autoplay: 2300,
-				hoverpause: false
-			}).mount();
-		}, 1250);
-		setTimeout(() => {
-			new Glide('#weatherApp',{
-				autoplay: 2300,
-				hoverpause: false
-			}).mount();
-		}, 1550);
+		// new Glide('#typingGame',{
+		// 	autoplay: 2300,
+		// 	hoverpause: false
+		// }).mount();
+		// setTimeout(() => {
+		// 	new Glide('#todoList',{
+		// 		autoplay: 2300,
+		// 		hoverpause: false
+		// 	}).mount();
+		// }, 1250);
+		// setTimeout(() => {
+		// 	new Glide('#weatherApp',{
+		// 		autoplay: 2300,
+		// 		hoverpause: false
+		// 	}).mount();
+		// }, 1550);
 	</script>
 </body>
 </html>

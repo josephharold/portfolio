@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily:{
         'serif':['Palatino'],
-        'sans': ['Helvetica']
+        'sans': ['Trebuchet MS']
       },
       borderRadius: {
         'large': '0.7rem'
