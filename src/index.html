@@ -4,38 +4,38 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Harold's Portfolio</title>
 </head>
-<body class="bg-yellow-900/10 text-slate-900 px-2 pb-2 pt-0 md:p-10">
+<body class="bg-zinc-100 text-slate-900 px-2 pb-2 pt-0 md:p-10">
 	<nav>
 		<div class="hidden bg-yellow-100 w-full font-serif top-0 md:block md:bg-transparent md:w-1/4 md:text-xl fixed md:top-12 md:right-0 md:px-10">
 			<ul class="flex flex-row justify-around md:block">
-				<li class="aboutMeNav cursor-pointer h-12 hover:text-lg duration-100 flex flex-row align-middle justify-end">
+				<li class="aboutMeNav cursor-pointer h-12 hover:scale-125 origin-right duration-100 flex flex-row align-middle justify-end">
 					<a>About Me</a>
 				</li>
-				<li class="projectsNav cursor-pointer h-12 hover:text-lg duration-100 flex flex-row align-middle justify-end">
+				<li class="projectsNav cursor-pointer h-12 hover:scale-125 origin-right duration-100 flex flex-row align-middle justify-end">
 					<a>Projects</a>
 				</li>
-				<li class="servicesNav cursor-pointer h-12 hover:text-lg duration-100 flex flex-row align-middle justify-end">
+				<li class="servicesNav cursor-pointer h-12 hover:scale-125 origin-right duration-100 flex flex-row align-middle justify-end">
 					<a>Services</a>
 				</li>
-				<li class="contactsNav cursor-pointer h-12 hover:text-lg duration-100 flex flex-row align-middle justify-end">
+				<li class="contactsNav cursor-pointer h-12 hover:scale-125 origin-right duration-100 flex flex-row align-middle justify-end">
 					<a>Contacts</a>
 				</li>
 			</ul>
 		</div>
-		<div id="navUl" class="fixed z-40 drop-shadow-2xl md:hidden w-1/2 h-full fixed dropdown cursor-pointer overflow-hidden bg-slate-200">
+		<div id="navUl" class="text-xl font-serif font-bold fixed left-0 z-40 drop-shadow-2xl md:hidden w-1/2 h-full fixed dropdown cursor-pointer overflow-hidden border-r-2 border-zinc-300 bg-zinc-100">
 			<ul class="flex flex-col justify-center items-center md:block">
-				<li class="aboutMeNav m-2 h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
+				<li class="aboutMeNav mt-20 m-2 h-12 origin-center hover:scale-125 duration-100 flex flex-row align-middle justify-end">
 					<a class="whitespace-nowrap">About Me</a>
 				</li>
-				<li class="projectsNav m-2 h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
+				<li class="projectsNav m-2 h-12 origin-center hover:scale-125 duration-100 flex flex-row align-middle justify-end">
 					<a class="whitespace-nowrap">Projects</a>
 				</li>
-				<li class="servicesNav m-2 h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
+				<li class="servicesNav m-2 h-12 origin-center hover:scale-125 duration-100 flex flex-row align-middle justify-end">
 					<a class="whitespace-nowrap">Services</a>
 				</li>
-				<li class="contactsNav m-2 h-12 origin-center hover:scale-75 duration-100 flex flex-row align-middle justify-end">
+				<li class="contactsNav m-2 h-12 origin-center hover:scale-125 duration-100 flex flex-row align-middle justify-end">
 					<a class="whitespace-nowrap">Contact</a>
 				</li>
 			</ul>
@@ -49,7 +49,7 @@
 			</div>
 		</div>
 		<!-- back to top button -->
-		<div id="backToTopButton" class="border-2 border-slate-300 flex drop-shadow-2xl justify-center items-center md:hidden fixed cursor-pointer rounded-full w-16 h-16 bg-slate-200 bottom-5 right-5 z-30">
+		<div id="backToTopButton" class="border-2 border-zinc-400 flex drop-shadow-sm justify-center items-center md:hidden fixed cursor-pointer rounded-full w-16 h-16 bg-zinc-300 bottom-5 right-5 z-30">
 			<div class="arrowUp w-5 h-5"></div>
 		</div>
 	</nav>
@@ -61,13 +61,13 @@
 					<h1 class="font-serif font-bold text-md md:text-3xl ">Joseph Harold S. Timbang</h1>
 				</div>
 				<div class="p-5">
-					<h2 class="font-serif font-bold text-3xl md:text-7xl">Hi! I'm a front-end developer based in the Philippines.</h2>
+					<h2 class="font-serif font-bold text-3xl md:text-7xl">Hello! I'm an aspiring front-end developer based in the Philippines.</h2>
 				</div>
 				<div class="p-5">
-					<p class="text-md text-justify md:text-2xl leading-10">Currently, I'm pursuing my Bachelor's degree in Information Technology in a University. While studying, I always try to make a few lines of code daily and learn something in front-end development.</p>
+					<p class="text-md text-justify md:text-2xl leading-10">I am currently pursuing my Bachelor's degree in Information Technology. While studying, I always try to make a few lines of code daily and learn something in front-end development.</p>
 				</div>
 				<div class="p-5">
-					<p class="text-md text-justify md:text-2xl leading-10">ReactJS, vanillaJS, and tailwindCSS are my go to frameworks for development.</p>
+					<p class="text-md text-justify md:text-2xl leading-10">ReactJS, vanillaJS, and tailwindCSS are my "go-to tools" for development.</p>
 				</div>
 			</div>
 			<hr class="divide-slate-900"/>
@@ -76,36 +76,57 @@
 				<div class="p-5">
 					<h2 id="projects" class="font-serif font-bold text-3xl underline">Projects</h2>
 				</div>
-				<div class="cursor-grab m-5 mb-24 flex flex-col lg:flex-row md:justify-center">
+				<div class="border border-slate-500 rounded-md sm:p-2 md:p-5 cursor-grab m-5 mb-24 flex flex-col justify-center">
 					<div id="typingGame" class="glide">
 						<div data-glide-el="track" class="glide__track">
 							<ul class="glide__slides">
-								<li class="glide__slide"><img id="typingGameImg"class="w-full sm:w-11/12 rounded-large"src="/src/assets/typingGame.png" alt=""></li>
-								<li class="glide__slide"><img id="typingGameImg1"class="w-full sm:w-11/12 rounded-large"src="/src/assets/typingGame_light.png" alt=""></li>
+								<li class="glide__slide"><img id="typingGameImg"class="w-full sm:w-11/12 rounded-md mx-auto" src="/src/assets/typingGame.png" alt=""></li>
+								<li class="glide__slide"><img id="typingGameImg1"class="w-full sm:w-11/12 rounded-md mx-auto" src="/src/assets/typingGame_light.png" alt=""></li>
 							</ul>
 						</div>
 					</div>
+				<p class="text-center text-sm sm:text-lg lg:text-xl py-2 ">
+					Try it here:
+					<a href="https://typing-game.pages.dev/" target="_blank"class="cursor-pointer italic font-bold text-blue-900 hover:underline">https://typing-game.pages.dev/</a>
+				</p>
 				</div>
-				<div class="cursor-grab m-5 mb-24 flex flex-col lg:flex-row md:justify-center">
+				<div class="border border-slate-500 rounded-md sm:p-2 md:p-5 cursor-grab m-5 mb-24 flex flex-col justify-center">
+					<div id="cardMemoryGame" class="glide">
+						<div data-glide-el="track" class="glide__track">
+							<ul class="glide__slides">
+								<li class="glide__slide"><img id="cardMemoryGame"class="w-full sm:w-11/12 rounded-md mx-auto" src="/src/assets/cardMemory.png" alt=""></li>
+								<li class="glide__slide"><img id="cardMemoryGame1"class="w-full sm:w-11/12 rounded-md mx-auto" src="/src/assets/cardMemory(1).png" alt=""></li>
+								<li class="glide__slide"><img id="cardMemoryGame2"class="w-full sm:w-11/12 rounded-md mx-auto" src="/src/assets/cardMemory(2).png" alt=""></li>
+								<li class="glide__slide"><img id="cardMemoryGame3"class="w-full sm:w-11/12 rounded-md mx-auto" src="/src/assets/cardMemory(3).png" alt=""></li>
+								<li class="glide__slide"><img id="cardMemoryGame4"class="w-full sm:w-11/12 rounded-md mx-auto" src="/src/assets/cardMemory(4).png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+				<p class="text-center text-sm sm:text-lg lg:text-xl py-2 ">
+					Try it here:
+					<a href="https://card-memory-game-4ed.pages.dev/" target="_blank"class="cursor-pointer italic font-bold text-blue-900 hover:underline">https://card-memory-game-4ed.pages.dev/</a>
+				</p>
+				</div>
+				<div class="border border-slate-500 rounded-md sm:p-2 md:p-5 cursor-grab m-5 mb-24 flex flex-col justify-between">
 					<div id="todoList" class="glide">
 						<div data-glide-el="track" class="glide__track">
 							<ul class="glide__slides">
-								<li class="glide__slide"><img id="todoListImg"class="w-full sm:w-11/12 rounded-large"src="/src/assets/todoList.png" alt=""></li>
-								<li class="glide__slide"><img id="todoListImg1"class="w-full sm:w-11/12 rounded-large"src="/src/assets/todoList(1).png" alt=""></li>
-								<li class="glide__slide"><img id="todoListImg2"class="w-full sm:w-11/12 rounded-large"src="/src/assets/todoList(2).png" alt=""></li>
-								<li class="glide__slide"><img id="todoListImg3"class="w-full sm:w-11/12 rounded-large"src="/src/assets/todoList(3).png" alt=""></li>
-								<li class="glide__slide"><img id="todoListImg4"class="w-full sm:w-11/12 rounded-large"src="/src/assets/todoList(4).png" alt=""></li>
+								<li class="glide__slide"><img id="todoListImg"class="w-full sm:w-11/12 rounded-large mx-auto" src="/src/assets/todoList.png" alt=""></li>
+								<li class="glide__slide"><img id="todoListImg1"class="w-full sm:w-11/12 rounded-large mx-auto" src="/src/assets/todoList(1).png" alt=""></li>
+								<li class="glide__slide"><img id="todoListImg2"class="w-full sm:w-11/12 rounded-large mx-auto" src="/src/assets/todoList(2).png" alt=""></li>
+								<li class="glide__slide"><img id="todoListImg3"class="w-full sm:w-11/12 rounded-large mx-auto" src="/src/assets/todoList(3).png" alt=""></li>
+								<li class="glide__slide"><img id="todoListImg4"class="w-full sm:w-11/12 rounded-large mx-auto" src="/src/assets/todoList(4).png" alt=""></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="cursor-grab m-5 mb-24 flex flex-col lg:flex-row md:justify-center">
+				<div class="border border-slate-500 rounded-md sm:p-2 md:p-5 cursor-grab m-5 mb-24 flex flex-col justify-center">
 					<div id="weatherApp" class="glide">
 						<div data-glide-el="track" class="glide__track">
 							<ul class="glide__slides">
-								<li class="glide__slide"><img id="weatherAppImg" class="w-full sm:w-11/12 rounded-large"src="/src/assets/weatherApp.png" alt=""></li>
-								<li class="glide__slide"><img id="weatherAppImg1" class="w-full sm:w-11/12 rounded-large"src="/src/assets/weatherApp(1).png" alt=""></li>
-								<li class="glide__slide"><img id="weatherAppImg2" class="w-full sm:w-11/12 rounded-large"src="/src/assets/weatherApp(2).png" alt=""></li>
+								<li class="glide__slide"><img id="weatherAppImg" class="w-full sm:w-11/12 rounded-large mx-auto" src="/src/assets/weatherApp.png" alt=""></li>
+								<li class="glide__slide"><img id="weatherAppImg1" class="w-full sm:w-11/12 rounded-large mx-auto" src="/src/assets/weatherApp(1).png" alt=""></li>
+								<li class="glide__slide"><img id="weatherAppImg2" class="w-full sm:w-11/12 rounded-large mx-auto" src="/src/assets/weatherApp(2).png" alt=""></li>
 							</ul>
 						</div>
 					</div>
@@ -118,14 +139,13 @@
 					<h1 id="services" class="font-serif font-bold text-3xl underline">Services</h1>
 				</div>
 				<div class="p-5">
-					<h2 class="font-serif lg:font-bold text-3xl md:text-7xl">If your website needs interactivity,<br/>I would be happy to assist you with that!</h2>
+					<h2 class="font-serif lg:font-bold text-3xl md:text-7xl">If you need a front-end developer, I'd be happy to assist you with that!</h2>
 				</div>
 				<div class="p-5">
-					<h2 class="text-md md:text-2xl">I'm open for projects for small businesses and individuals.</h2>
-					<h2 class="text-md md:text-2xl"></h2>
+					<h2 class="text-md md:text-2xl">Currently, I'm looking forward for internship opportunities.</h2>
 				</div>
 				<div class="p-5">
-						<h2 class="text-md md:text-2xl">For more details you can <a href="https://www.fiverr.com/joseph_harold" class="cursor-pointer italic text-blue-900 hover:underline">check my Fiverr profile here.</a></h2>
+					<h2 class="text-md md:text-2xl">In any case, it would be a pleasure to discuss things with you!</h2>
 				</div>
 			</div>
 			<hr>
@@ -147,46 +167,17 @@
 						<a class="italic text-blue-900 hover:underline text-md" href="https://github.com/josephharold">/josephharold</a>
 					</div>
 					<hr class="border-slate-500 sm:hidden my-3">
-					<img class="justify-self-center w-10 lg:w-12 m-2 sm:m-5" src="/src/assets/linkedInBugLogo.png" alt="">
-					<div class="flex flex-col items-center md:items-start">
-						<h1 class="underline font-serif text-lg">LinkedIn</h1>
-						<a class="italic text-blue-900 hover:underline text-md" href="https://linkedin.com/in/joseph-harold-timbang">/in/joseph-harold-timbang</a>
-					</div>
-					<hr class="border-slate-500 sm:hidden my-3">
 					<img class="justify-self-center w-10 lg:w-12 m-2 sm:m-5" src="/src/assets/gmailLogo.png" alt="">
 					<div class="flex flex-col items-center md:items-start">
 						<h1 class="underline font-serif text-lg">Gmail</h1>
-						<a class="italic text-blue-900 hover:underline break-all text-md" href="mailto:josephharold.timbang.dev@gmail.com">josephharold.timbang.dev@gmail.com</a>
+						<a class="italic text-blue-900 hover:underline break-all text-md" href="mailto:josephharold.timbang@g.msuiit.edu.ph">josephharold.timbang@g.msuiit.edu.ph</a>
 					</div>
 					<hr class="border-slate-500 sm:hidden my-3">
-					<h1 class="font-serif text-3xl justify-self-center w-24 lg:w-12 m-2 sm:m-5">Fiverr</h1>
-					<div class="flex flex-col items-center md:items-start">
-						<a class="italic text-blue-900 hover:underline text-md" href="https://www.fiverr.com/joseph_harold">/joseph_harold</a>
-					</div>
 				</div>
 			</div>
 		</div>
 
 	</section>
 	<script src="scripts/script.js" type="module"></script>
-	<!-- <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
-	<script>
-		// new Glide('#typingGame',{
-		// 	autoplay: 2300,
-		// 	hoverpause: false
-		// }).mount();
-		// setTimeout(() => {
-		// 	new Glide('#todoList',{
-		// 		autoplay: 2300,
-		// 		hoverpause: false
-		// 	}).mount();
-		// }, 1250);
-		// setTimeout(() => {
-		// 	new Glide('#weatherApp',{
-		// 		autoplay: 2300,
-		// 		hoverpause: false
-		// 	}).mount();
-		// }, 1550);
-	</script>
 </body>
 </html>

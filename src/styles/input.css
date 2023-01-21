@@ -6,8 +6,10 @@
 
 .dropdown{
 	transition-duration: 700ms;
-	transition-timing-function: cubic-bezier( 1, -0.07, 0.05, 1 );
+	transition-timing-function: cubic-bezier(.49,.23,.43,.77);
 	max-width: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 .dropdown.dropdown-active{
 	max-width: 1000px;

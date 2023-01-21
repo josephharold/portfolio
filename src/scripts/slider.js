@@ -6,6 +6,12 @@ const typingGame = new Glide('#typingGame',{
 	gap: 20,
 	animationDuration: 1000,
 });
+const cardMemoryGame = new Glide('#cardMemoryGame',{
+	autoplay: 2500,
+	hoverpause: false,
+	gap: 20,
+	animationDuration: 1000,
+});
 const todoList =  new Glide('#todoList',{
 		autoplay: 2500,
 		hoverpause: false,
@@ -21,6 +27,7 @@ const weatherApp = new Glide('#weatherApp',{
 
 export {
 	typingGame,
+	cardMemoryGame,
 	todoList,
 	weatherApp
 }

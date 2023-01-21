@@ -1,6 +1,5 @@
 import '../styles/input.css';
 import '@glidejs/glide/src/assets/sass/glide.core.scss';
-// import '../styles/sass.scss';
 import * as slider from './slider.js';
 const navUl = document.getElementById('navUl');
 // navigation icons
@@ -29,7 +28,7 @@ const closeNavUl = (e)=>{
 }
 
 const backToTop = ()=>{
-	window.scrollTo({top: 0, behavior: "smooth"});
+	window.scroll({top: 0, behavior: "smooth"});
 }
 
 const scrollToSection = (id)=>{
@@ -51,3 +50,4 @@ for(let i=0; i<2; i++){
 slider.todoList.mount();
 slider.weatherApp.mount();
 slider.typingGame.mount();
+slider.cardMemoryGame.mount();
