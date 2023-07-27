@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 module.exports = {
 	watch: true, 
-	mode: 'development',
+	mode: 'production',
 	entry: {
 		bundle: path.join(__dirname, 'src/scripts/index.js')
 	},
@@ -34,6 +34,7 @@ module.exports = {
   plugins: [
 		new HtmlWebPackPlugin({
 			title: 'helloworld',
+			inject: 'body',	
 			filename: 'index.html',
 			template: 'src/index.html'
 		})
