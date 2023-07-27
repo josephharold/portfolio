@@ -6,12 +6,35 @@ const typingGame = new Glide('#typingGame',{
 	gap: 20,
 	animationDuration: 1000,
 });
+
+const clubConnect = new Glide('#clubConnect',{
+	autoplay: 2500,
+	hoverpause: false,
+	gap: 20,
+	animationDuration: 1000,
+})
+
+const lguIliganKiosk = new Glide('#lguIliganKiosk',{
+	autoplay: 2500,
+	hoverpause: false,
+	gap: 20,
+	animationDuration: 1000,
+})
+
+const iitrace = new Glide('#iitrace',{
+	autoplay: 2500,
+	hoverpause: false,
+	gap: 20,
+	animationDuration: 1000,
+})
+
 const cardMemoryGame = new Glide('#cardMemoryGame',{
 	autoplay: 2500,
 	hoverpause: false,
 	gap: 20,
 	animationDuration: 1000,
 });
+
 const todoList =  new Glide('#todoList',{
 		autoplay: 2500,
 		hoverpause: false,
@@ -27,6 +50,9 @@ const weatherApp = new Glide('#weatherApp',{
 
 export {
 	typingGame,
+	clubConnect,
+	lguIliganKiosk,
+	iitrace,
 	cardMemoryGame,
 	todoList,
 	weatherApp

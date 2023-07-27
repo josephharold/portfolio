@@ -48,6 +48,9 @@ for(let i=0; i<2; i++){
 }
 
 slider.todoList.mount();
+slider.clubConnect.mount();
+slider.lguIliganKiosk.mount();
+slider.iitrace.mount();
 slider.weatherApp.mount();
 slider.typingGame.mount();
 slider.cardMemoryGame.mount();
